@@ -7,7 +7,7 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angula
   selector: 'app-tracking',
   standalone: true,
   templateUrl: './tracking.component.html',
-  styleUrls: ['./tracking.component.css'],
+  styleUrls: ['./tracking.component.css', './media-queries.css'],
   imports: [CommonModule, ReactiveFormsModule] // Importações necessárias para formulários
 })
 export class TrackingComponent {

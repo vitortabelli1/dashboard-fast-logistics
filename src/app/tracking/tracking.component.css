@@ -9,6 +9,33 @@
   box-shadow: none;
 }
 
+/* Estilo para o input da busca */
+.search-input {
+  border: 2px solid #007bff; /* Borda robusta com cor azul */
+  background-color: #fff; /* Fundo branco para o input */
+  border-radius: 12px; /* Bordas arredondadas */
+  padding: 12px 20px; /* Ajusta o preenchimento para tornar a caixa mais robusta */
+  font-size: 16px; /* Tamanho da fonte */
+  margin-left:-120px;
+  color: #333; /* Cor do texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para um efeito 3D */
+}
+
+/* Estilo para o botão de busca */
+.btn-primary {
+  border-radius: 12px; /* Bordas arredondadas para o botão */
+  padding: 12px 20px; /* Ajusta o preenchimento do botão */
+  font-size: 16px; /* Tamanho da fonte do botão */
+  background-color: #0b0b0b; /* Cor de fundo azul para o botão */
+  border: none; /* Remove a borda padrão */
+  color: #fff; /* Cor do texto no botão */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Cor de fundo mais escura no hover */
+}
+
+
 /* Estilo do ícone de pesquisa */
 .input-group-prepend .input-group-text {
   background-color: transparent;

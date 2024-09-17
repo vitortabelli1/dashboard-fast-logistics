@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+    .tracking-container {
+      padding: 10px;
+    }
+  
+    .input-group {
+      flex-direction: column;
+    }
+  
+    .search-input {
+      margin-top: 150px;
+      margin-left: -660px;
+      padding: 15px;
+    }
+  
+    .btn-primary {
+      width: 30%;
+      padding: 20px;
+      margin-left: 20px;
+    }
+  
+    .order-card {
+      padding: 50px;
+      width: 300px;
+      margin-left:-680px;
+      margin-top: 20px; /* Adiciona margem superior para garantir que o cartão fique abaixo da barra de progresso */
+    }
+  
+    .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+      border-bottom: none;
+      margin-bottom: 10px;
+    }
+  
+    .order-dates {
+      text-align: left;
+    }
+  
+    .status-timeline .step {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .progress-bar {
+      margin-top: 20px; 
+
+    }
+  }
+  

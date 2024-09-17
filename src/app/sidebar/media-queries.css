@@ -1,0 +1,35 @@
+
+  /* Estilos para telas com largura de 768px ou menos */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: static; /* Remove a posição fixa */
+      width: 100%; /* Ocupa toda a largura da tela */
+      height: auto; /* Ajusta a altura conforme o conteúdo */
+      display: flex;
+      justify-content: space-around; /* Distribui os itens horizontalmente */
+      background-color: #eceaea; /* Cor de fundo pode ser ajustada */
+    }
+  
+    .sidebar ul {
+      display: flex; /* Faz os itens aparecerem em linha */
+      padding: 0;
+      margin:  0;
+      list-style: none;
+    }
+  
+    .sidebar ul li {
+      margin: 0;
+    }
+  
+    .sidebar ul li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+  
+    .mat-icon {
+      font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+    }
+  }
+  

@@ -1,0 +1,67 @@
+<div class="tracking-container">
+  <h2>Rastreamento de Pedido</h2>
+
+  <!-- Formulário de busca -->
+  <form [formGroup]="trackingForm" (ngSubmit)="searchOrder()">
+    <div class="input-group mb-3">
+      <input 
+        type="text" 
+        formControlName="orderNumber" 
+        class="form-control search-input" 
+        placeholder="Digite o ID do pedido" 
+        aria-label="ID do Pedido">
+      <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+  </form>
+
+  <!-- Mensagem de status se o pedido não for encontrado -->
+  <div *ngIf="statusMessage && !order" class="status-message">
+    <p>{{ statusMessage }}</p>
+  </div>
+
+  <!-- Exibição do pedido -->
+  <div *ngIf="order" class="order-card mt-3">
+    <!-- Cabeçalho do pedido -->
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <div class="order-id">
+        <span>Pedido ID: <strong>{{ order.id }}</strong></span>
+      </div>
+      <div class="status">
+        <span class="badge" [ngClass]="order.statusClass">{{ order.status }}</span>
+      </div>
+      <div class="more-options">
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </div>
+
+       <!-- Barra de progresso (pode ser baseada no status ou em outras lógicas) -->
+       <div class="progress-bar mt-3">
+        <div class="progress">
+          <div class="progress-value" [style.width]="order.progress + '%'"></div>
+        </div>
+      </div>
+    <!-- Exibição das datas com validações -->
+    <div class="order-dates mt-3 text-right">
+      <p *ngIf="order.dates.startDate">
+        <strong>Início:</strong> {{ order.dates.startDate | date: 'dd MMM' }}
+      </p>
+      <p *ngIf="order.dates.inTransitDate">
+        <strong>Andamento:</strong> {{ order.dates.inTransitDate | date: 'dd MMM' }}
+      </p>
+      <p *ngIf="order.dates.arrivalDate">
+        <strong>Entregue:</strong> {{ order.dates.arrivalDate | date: 'dd MMM' }}
+      </p>
+    </div>
+
+
+
+    <!-- Detalhes do status em linha do tempo -->
+    <div class="status-timeline mt-3">
+      <div *ngFor="let step of order.steps" class="step">
+        <span class="date">{{ step.date }}</span>
+        <span class="description">{{ step.description }}</span>
+        <span class="time">{{ step.time || '--:--' }}</span>
+      </div>
+    </div>
+  </div>
+</div>

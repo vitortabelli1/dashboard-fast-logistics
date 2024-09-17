@@ -1,0 +1,95 @@
+.tracking-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 68%;
+    max-width: 900px;
+    margin: auto;
+    margin-left: 300px;
+    margin-top:-300px;
+  }
+  
+  .tracking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .order-id h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .documentation .doc-btn {
+    background-color: #f3f7fe;
+    color: #007bff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .tracking-map {
+    height: 300px; /* Ajuste conforme necessário */
+    width: 100%;
+    position: relative;
+  }
+  
+  
+  .tracking-map img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .tracking-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .tracking-info .info-item {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .main-info {
+    margin-top: 30px;
+  }
+  
+  .tabs button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tabs button.active {
+    border-bottom: 3px solid #007bff;
+  }
+  
+  .vehicle-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .vehicle-info img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+  }
+  .vehicle-details {
+    font-size: 14px;
+  }
+  
+  .vehicle-details h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    font-size: 18px;
+    color: #f9a825;
+  }
+  

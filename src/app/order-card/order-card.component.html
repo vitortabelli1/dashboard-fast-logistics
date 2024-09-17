@@ -1,0 +1,34 @@
+<div *ngIf="order" class="order-card">
+  <!-- Cabeçalho do Cartão -->
+  <div class="card-header">
+    <div class="order-id">
+      <span>Order ID: <strong>{{ order.id }}</strong></span>
+    </div>
+    <div class="status">
+      <span class="badge" [ngClass]="order.statusClass">{{ order.status }}</span>
+    </div>
+    <div class="more-options">
+      <i class="fas fa-ellipsis-v"></i> <!-- ícone de opções -->
+    </div>
+  </div>
+
+  <!-- Barra de progresso -->
+  <div class="progress-bar">
+    <div class="progress">
+      <div class="progress-value" [style.width]="order.progress + '%'"></div>
+    </div>
+  </div>
+
+  <!-- Detalhes do Status -->
+  <div class="status-timeline">
+    <div *ngFor="let step of order.steps" class="step">
+      <span class="date">{{ step.date }}</span>
+      <span class="description">{{ step.description }}</span>
+      <span class="time">{{ step.time || '--:--' }}</span>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="!order && statusMessage" class="status-message">
+  <p>{{ statusMessage }}</p>
+</div>

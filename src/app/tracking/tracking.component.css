@@ -1,0 +1,108 @@
+/* Estilo da caixa de entrada personalizada */
+.custom-input {
+  border-radius: 30px; /* Bordas arredondadas */
+  padding: 10px;
+  width: 360px;
+  margin-left: -140px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Borda leve */
+  box-shadow: none;
+}
+
+/* Estilo do ícone de pesquisa */
+.input-group-prepend .input-group-text {
+  background-color: transparent;
+  border: none;
+}
+
+.input-group-text i {
+  color: #0056b3; /* Cor do ícone */
+  font-size: 18px;
+}
+
+/* Efeito de foco na caixa de entrada */
+.custom-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 86, 179, 0.5); /* Efeito de foco */
+  border-color: #0056b3;
+}
+
+/* Estilo do cartão de pedido */
+.order-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px; /* Margem superior */
+  margin-left: -140px; /* Margem esquerda */
+  width: 40%; /* Largura do cartão */
+  padding: 28px;
+}
+
+/* Cabeçalho do cartão */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-id {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilo do status */
+.status .badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.status .in-transit {
+  background-color: #28a745; /* Verde para "In Transit" */
+}
+
+/* Barra de progresso */
+.progress-bar {
+  margin: 15px 0;
+}
+
+.progress {
+  background-color: #e9ecef;
+  border-radius: 10px;
+  height: 8px;
+  width: 100%;
+  position: relative;
+}
+
+.progress-value {
+  background-color: #28a745;
+  border-radius: 10px;
+  height: 8px;
+  width: 75%; /* Valor da barra de progresso */
+}
+
+/* Linha do tempo de status */
+.status-timeline {
+  margin-top: 10px;
+}
+
+/* Estilo para cada etapa da linha do tempo */
+.step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.date {
+  color: #6c757d;
+}
+
+.description {
+  font-weight: bold;
+}
+
+.time {
+  color: #6c757d;
+}

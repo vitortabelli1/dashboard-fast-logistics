@@ -1,0 +1,75 @@
+.order-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    margin-top:40px;
+    margin-left:-140px;
+    width: 40%;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .order-id {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .status .badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .status .in-transit {
+    background-color: #28a745;
+  }
+  
+  .progress-bar {
+    margin: 15px 0;
+  }
+  
+  .progress {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    height: 8px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .progress-value {
+    background-color: #28a745;
+    border-radius: 10px;
+    height: 8px;
+    width: 75%;
+  }
+  
+  .status-timeline {
+    margin-top: 10px;
+  }
+  
+  .step {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .date {
+    color: #6c757d;
+  }
+  
+  .description {
+    font-weight: bold;
+  }
+  
+  .time {
+    color: #6c757d;
+  }
+  

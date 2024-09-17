@@ -1,0 +1,57 @@
+[
+  {
+    "id": "#AD345Jk758A1",
+    "status": "Início",
+    "name": "João Silva",
+    "product": "Geladeira",
+    "dates": {
+      "startDate": "2024-09-10",
+      "inTransitDate": null,
+      "arrivalDate": null
+    }
+  },
+  {
+    "id": "#AD345Jk758B2",
+    "status": "Em trânsito",
+    "name": "Maria Oliveira",
+    "product": "Máquina de Lavar",
+    "dates": {
+      "startDate": "2024-09-08",
+      "inTransitDate": "2024-09-12",
+      "arrivalDate": null
+    }
+  },
+  {
+    "id": "#AD345Jk758C3",
+    "status": "Chegou ao destino",
+    "name": "Carlos Pereira",
+    "product": "Microondas",
+    "dates": {
+      "startDate": "2024-09-05",
+      "inTransitDate": "2024-09-09",
+      "arrivalDate": "2024-09-13"
+    }
+  },
+  {
+    "id": "#AD345Jk758D4",
+    "status": "Início",
+    "name": "Ana Souza",
+    "product": "Fogão",
+    "dates": {
+      "startDate": "2024-09-11",
+      "inTransitDate": null,
+      "arrivalDate": null
+    }
+  },
+  {
+    "id": "#AD345Jk758E5",
+    "status": "Em trânsito",
+    "name": "Paulo Lima",
+    "product": "Lava-Louças",
+    "dates": {
+      "startDate": "2024-09-07",
+      "inTransitDate": "2024-09-10",
+      "arrivalDate": null
+    }
+  }
+]

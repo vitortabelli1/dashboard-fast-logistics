@@ -1,0 +1,55 @@
+<div class="tracking-card">
+  <!-- Cabeçalho com ID do Pedido e Documentação -->
+  <div class="tracking-header">
+    <div class="order-id">
+      <h2>Order ID: <strong>#AD345Jk758</strong></h2>
+    </div>
+    <div class="documentation">
+      <button class="doc-btn">Documentation</button>
+    </div>
+  </div>
+
+  <!-- Mapa de Rastreamento -->
+  <div class="tracking-map" #map>
+    <!-- O mapa será renderizado aqui -->
+  </div>
+
+  <div class="tracking-info">
+    <div class="info-item">
+      <i class="fas fa-location-arrow"></i> Current location: Torstraße 10117
+    </div>
+    <div class="info-item">
+      <i class="fas fa-tachometer-alt"></i> Speed: 60 mph
+    </div>
+    <div class="info-item">
+      <i class="fas fa-road"></i> Kilometers left: 24 km
+    </div>
+    <div class="info-item">
+      <i class="fas fa-clock"></i> Last stop: 2 hours ago
+    </div>
+  </div>
+
+  <!-- Informações Principais -->
+  <div class="main-info">
+    <h3>Main info</h3>
+    <div class="tabs">
+      <button (click)="activeTab = 'order-details'" [ngClass]="{'active': activeTab === 'order-details'}">Order details</button>
+      <button (click)="activeTab = 'vehicle'" [ngClass]="{'active': activeTab === 'vehicle'}">Vehicle</button>
+      <button (click)="activeTab = 'driver-info'" [ngClass]="{'active': activeTab === 'driver-info'}">Driver information</button>
+      <button (click)="activeTab = 'customer-info'" [ngClass]="{'active': activeTab === 'customer-info'}">Customer information</button>
+    </div>
+
+    <!-- Conteúdo das Abas -->
+    <div *ngIf="activeTab === 'vehicle'" class="vehicle-info">
+      <img src="assets/images/truck.png" alt="Truck" />
+      <div class="vehicle-details">
+        <h4>Hyundai</h4>
+        <p>Model: Cargo Track HD320</p>
+        <p>Weight: 7,260 kg</p>
+        <p>Load Volume: 372,45 in³</p>
+        <p>Space: 71% / 100%</p>
+        <span class="rating">4.9 ★</span>
+      </div>
+    </div>
+  </div>
+</div>
